@@ -1,0 +1,85 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{% block title %}{% endblock title %}</title>
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="icon" href="{% static 'img/c21_favicon.png' %}">
+    <!-- Internal Styling -->
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    <!-- Additional Header Content -->
+    {% block header_content %}{% endblock header_content %}
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="py-0 navbar navbar-expand-lg bg-grey">
+        <a class="py-0 navbar-brand" href="{% url 'index' %}"><img height="75px" src="{% static 'img/c21_logo_white.png' %}" alt="c21_logo_white"></a>
+        <button class="navbar-toggler ml-auto text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span style="font-size: 40px;"><i class="fas fa-bars"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="px-3 nav-link barlow" href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="px-3 nav-link barlow" href="{% url 'educational-resources' %}">Educational Resources</a>
+                </li>
+                <li class="nav-item">
+                    <a class="px-3 nav-link barlow" href="{% url 'personality-assessment' %}">Personality Assessment</a>
+                </li>
+                <li class="nav-item">
+                    <a class="px-3 nav-link barlow" href="{% url 'business-plan' %}">Business Plan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="px-3 nav-link barlow" href="{% url 'training' %}">Training</a>
+                </li>
+                <li class="nav-item">
+                    <a class="px-3 nav-link barlow" href="{% url 'careers' %}">Careers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="px-3 nav-link barlow" href="{% url 'about-us' %}">About Us</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    {% block page_content %}
+        {% comment %} Individual page content is added here {% endcomment %}
+    {% endblock page_content %}
+    <!-- Footer -->
+    <div style="margin: 700px;" class="bg-white"></div>
+    <footer>
+        <div class="text-center bg-grey text-white barlow">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md">
+                        <h1>Add logo</h1>
+                        <p>270 East Carmel Drive</p>
+                        <p>Carmel, IN 46032</p>
+                        <p>Phone: <a href="tel:3178144843">317-814-4843</a></p>
+                        <p>Email: <a href="mailto:information@c21scheetz.com">information@c21scheetz.com</a></p>
+                    </div>
+                    <div class="col-md">
+                        <h1>Agent and Office Info</h1>
+                        <h1>Social media links</h1>
+                        <h3><a href="{% url 'contact-us' %}" class="text-white barlow">Contact us</a></h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

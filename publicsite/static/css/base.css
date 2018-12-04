@@ -1,0 +1,42 @@
+/* Century 21 Colors and Fonts */
+.barlow {
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.muli {
+    font-family: 'Muli', sans-serif;
+}
+
+.text-gold {
+    color: #A19276;
+}
+
+.bg-gold {
+    background-color: #A19276;
+}
+
+.text-grey {
+    color: #252526;
+}
+
+.bg-grey {
+    background-color: #252526;
+}
+
+.text-light-grey {
+    color: #E6E7E8;
+}
+
+.bg-light-grey {
+    background-color: #E6E7E8;
+}
+
+/* Anchor Tag */
+a {
+    color: white;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #A19276;
+}

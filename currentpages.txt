@@ -1,0 +1,129 @@
+CLIENT FACING SITE PAGES
+------------------------
+1. Header and footer
+    - Just make plain html
+2. Homepage
+    - HTML
+    - Maybe make the 'Meet our team' pull from db
+    - Contact form and map
+3. Education Resources
+    - HTML
+4. Personality Assessment
+    - HTML
+5. Business Plan
+    - HTML
+6. Training
+    - HTML
+7. Careers
+    - Pulls job postings from backend
+8. About Us
+    - HTML and Vimeo videos
+9. Contact Us
+    - Contact form and map
+10. Career Night
+    - Should pull from back end
+
+ADMIN SITE PAGES
+----------------
+1. Dashboard
+    - Daily feed
+        - Uncompleted Tasks
+        - Transactions
+    - Daily reporting
+        - Career Night Sign-ups
+    - Latest system emails
+2. Recruiting
+    - My recruits
+        - Shows list detail of my recruits
+    - Add recruit
+        - Form to fill out with recruits details
+    - My groups
+    - Create group
+        - Add name and description
+3. Reporting
+    - Company scorecard
+        - Customizeable date range
+        - Download options .csv or .pdf
+        - Up front data
+            - Net agents
+            - Experience agent goals
+            - New agent goals
+            - Company dollar lost
+        - Recruits Actual
+            - Table with each office
+            - Lays out goals and actual recruits
+        - Departures
+            - Table with each office
+            - How many agents and staff left and dollar lost
+    - Complete Appointments by manager
+        - Customizable date range
+        - Export xlsx
+        - List of managers
+    - Set Appointments by manager
+        - Customizable date range
+        - Export xlsx
+        - List of managers
+    - Completed calls by manager
+        - Customizable date range
+        - Export xlsx
+        - List of managers
+    - Set calls by manager
+        - Customizable date range
+        - Export xlsx
+        - List of managers
+    - Completed calls to appointments by manager
+        - Customizable date range
+        - Export xlsx
+        - List of managers
+    - Live chat
+        - Log of chats from Lonewolf site
+    - Reported Agents
+        - List of hires and departures
+4. Agents
+    - All agents
+        - Roster view of all Scheetz agents
+    - Manual agent sync
+        - Broken
+5. Text System
+    - Groups
+    - Add group
+6. User Management
+    - Admin user management
+    - Edit users
+    - Impersonate users
+7. Job Center
+    - Dashboard
+        - Current positions
+        - Removed positions
+    - Add job listing
+        - Form to add job listing
+    - Applicants
+        - List of applicantns for current job listings
+8. Searches
+    - Recruit Search
+        - Searching for agents that are currently recruits
+    - Mibor Search
+        - Search for any agent in Mibor
+9. Recruit Profile
+    - Agent details
+    - Create a note
+    - Log a call
+    - Upload Resume
+    - Log Email
+    - Send email
+    - Verify or send text
+    - Tasks
+        - List of upcoming
+        - Add new
+    - Calls
+        - List of upcoming
+        - Add new
+    - Appts
+        - List of upcoming
+        - Add new
+    - Timeline
+    - Notes
+    - Appointments
+    - Calls
+    - Texts
+    - Business Plans

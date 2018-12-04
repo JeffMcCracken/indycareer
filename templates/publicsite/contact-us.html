@@ -1,0 +1,16 @@
+{% extends 'publicsite/base.html' %}
+
+{% block title %}
+Contact Us
+{% endblock title %}
+
+{% block page_content %}
+<h1 class='muli pt-5 text-center'>Welcome to the contact us page</h1>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <div class="form-actions">
+        <button type="submit">Send</button>
+    </div>
+</form>
+{% endblock page_content %}
