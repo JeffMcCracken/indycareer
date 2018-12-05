@@ -19,6 +19,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'', include('publicsite.urls')), 
+    url(r'^django-admin/', admin.site.urls),
+    url(r'', include('publicsite.urls')),
+    url(r'^admin/', include('adminsite.urls')),
 ]

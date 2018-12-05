@@ -21,32 +21,26 @@
 <body>
     <!-- Navbar -->
     <nav class="py-0 navbar navbar-expand-lg bg-grey">
-        <a class="py-0 navbar-brand" href="{% url 'publicsite:index' %}"><img height="75px" src="{% static 'img/c21_logo_white.png' %}" alt="c21_logo_white"></a>
+        <a class="py-0 navbar-brand" href="{% url 'adminsite:index' %}"><img height="75px" src="{% static 'img/c21_logo_white.png' %}" alt="c21_logo_white"></a>
         <button class="navbar-toggler ml-auto text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span style="font-size: 40px;"><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="px-3 nav-link barlow" href="{% url 'publicsite:index' %}">Home</a>
+                    <a class="px-3 nav-link barlow" href="adminsite:index">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="px-3 nav-link barlow" href="{% url 'publicsite:educational-resources' %}">Educational Resources</a>
+                    <a class="px-3 nav-link barlow" href="#">Reporting</a>
                 </li>
                 <li class="nav-item">
-                    <a class="px-3 nav-link barlow" href="{% url 'publicsite:personality-assessment' %}">Personality Assessment</a>
+                    <a class="px-3 nav-link barlow" href="#">Recruiting</a>
                 </li>
                 <li class="nav-item">
-                    <a class="px-3 nav-link barlow" href="{% url 'publicsite:business-plan' %}">Business Plan</a>
+                    <a class="px-3 nav-link barlow" href="#">Rosters</a>
                 </li>
                 <li class="nav-item">
-                    <a class="px-3 nav-link barlow" href="{% url 'publicsite:training' %}">Training</a>
-                </li>
-                <li class="nav-item">
-                    <a class="px-3 nav-link barlow" href="{% url 'publicsite:careers' %}">Careers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="px-3 nav-link barlow" href="{% url 'publicsite:about-us' %}">About Us</a>
+                    <a class="px-3 nav-link barlow" href="#">Jobs</a>
                 </li>
             </ul>
         </div>
@@ -59,22 +53,7 @@
     <div style="margin: 700px;" class="bg-white"></div>
     <footer>
         <div class="text-center bg-grey text-white barlow">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md">
-                        <h1>Add logo</h1>
-                        <p>270 East Carmel Drive</p>
-                        <p>Carmel, IN 46032</p>
-                        <p>Phone: <a href="tel:3178144843">317-814-4843</a></p>
-                        <p>Email: <a href="mailto:information@c21scheetz.com">information@c21scheetz.com</a></p>
-                    </div>
-                    <div class="col-md">
-                        <h1>Agent and Office Info</h1>
-                        <h1>Social media links</h1>
-                        <h3><a href="{% url 'publicsite:contact-us' %}" class="text-white barlow">Contact us</a></h3>
-                    </div>
-                </div>
-            </div>
+            <h1>Great Footer!</h1>
         </div>
     </footer>
     <!-- Bootstrap -->

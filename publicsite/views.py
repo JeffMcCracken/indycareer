@@ -1,8 +1,11 @@
 from django.shortcuts import render, redirect
-from django.views.generic import TemplateView
+from django.views.generic import (TemplateView, CreateView, UpdateView, 
+                                    DeleteView, ListView, DetailView)
 from django.core.mail import send_mail, BadHeaderError
+from django.core.urlresolvers import reverse_lazy
 from django.http import HttpResponse, HttpResponseRedirect
 from .forms import ContactForm
+from .models import JobPosting
 
 class IndexView(TemplateView):
     template_name = 'publicsite/index.html'

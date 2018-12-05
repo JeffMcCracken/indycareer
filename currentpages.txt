@@ -37,9 +37,9 @@ ADMIN SITE PAGES
         - Shows list detail of my recruits
     - Add recruit
         - Form to fill out with recruits details
-    - My groups
-    - Create group
-        - Add name and description
+****- My groups
+****- Create group
+****    - Add name and description
 3. Reporting
     - Company scorecard
         - Customizeable date range
