@@ -5,7 +5,7 @@ from PIL import Image
 class Staff(models.Model):
     name = models.CharField(max_length=150)
     title = models.CharField(max_length=150)
-    position = models.PositiveIntegerField(unique=True)
+    order = models.PositiveIntegerField(unique=True)
     photo = models.ImageField(upload_to='media/staff_headshots')
 
     def __str__(self):
