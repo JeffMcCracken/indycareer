@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Staff, JobPosting
+from .models import Staff
 
 class StaffAdmin(admin.ModelAdmin):
     list_display = [
@@ -9,4 +9,3 @@ class StaffAdmin(admin.ModelAdmin):
     ]
 
 admin.site.register(Staff, StaffAdmin)
-admin.site.register(JobPosting)
