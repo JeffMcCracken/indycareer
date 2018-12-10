@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'publicsite',
     'adminsite',
     'jobs',
+    'reporting',
 ]
 
 MIDDLEWARE = [
