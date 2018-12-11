@@ -4,7 +4,7 @@ from .models import Office
 class OfficeAdmin(admin.ModelAdmin):
     list_display = [
         'city',
-        'street',
+        'street_address',
         'zip_code',
         'phone'
     ]

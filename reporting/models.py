@@ -2,7 +2,7 @@ from django.db import models
 
 class Office(models.Model):
     city = models.CharField(max_length=150)
-    street = models.CharField(max_length=150)
+    street_address = models.CharField(max_length=150)
     zip_code = models.PositiveIntegerField()
     phone = models.PositiveIntegerField()
     exp_agent_goal = models.PositiveIntegerField(blank=True, null=True)
@@ -14,4 +14,9 @@ class Office(models.Model):
     company_dollar = models.PositiveIntegerField(blank=True, null=True)
 
     def __str__(self):
-        return self.city
+        if self.zip_code == 46204:
+            return 'Downtown'
+        elif self.zip_code == 46240:
+            return '96th Street'
+        else:
+            return self.city
