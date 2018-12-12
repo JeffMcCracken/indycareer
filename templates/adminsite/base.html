@@ -21,14 +21,14 @@
 <body>
     <!-- Navbar -->
     <nav class="py-0 navbar navbar-expand-lg bg-grey">
-        <a class="py-0 navbar-brand" href="{% url 'adminsite:index' %}"><img height="75px" src="{% static 'img/c21_logo_white.png' %}" alt="c21_logo_white"></a>
+        <a class="py-0 navbar-brand" href="{% url 'adminsite:dashboard' %}"><img height="75px" src="{% static 'img/c21_logo_white.png' %}" alt="c21_logo_white"></a>
         <button class="navbar-toggler ml-auto text-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span style="font-size: 40px;"><i class="fas fa-bars"></i></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
-                    <a class="px-3 nav-link barlow" href="adminsite:index">Home</a>
+                    <a class="px-3 nav-link barlow" href="adminsite:dashboard">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="px-3 nav-link barlow" href="#">Reporting</a>
@@ -41,6 +41,9 @@
                 </li>
                 <li class="nav-item">
                     <a class="px-3 nav-link barlow" href="#">Jobs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="px-3 nav-link barlow" href="{% url 'adminsite:logout' %}">Log Out</a>
                 </li>
             </ul>
         </div>

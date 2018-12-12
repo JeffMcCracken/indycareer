@@ -14,6 +14,7 @@ class Office(models.Model):
     company_dollar = models.PositiveIntegerField(blank=True, null=True)
 
     def __str__(self):
+        # Handling unique office names
         if self.zip_code == 46204:
             return 'Downtown'
         elif self.zip_code == 46240:

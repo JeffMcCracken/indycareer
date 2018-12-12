@@ -1,0 +1,16 @@
+{% extends 'adminsite/base.html' %}
+
+{% block title %}
+Admin - Login
+{% endblock title %}
+
+{% block page_content %}
+<div class="container">
+    <h1>Log In</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <input type="submit" value="Login" class="btn btn-default">
+    </form>
+</div>
+{% endblock page_content %}
